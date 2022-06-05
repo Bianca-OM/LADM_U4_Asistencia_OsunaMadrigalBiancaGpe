@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">APK ASISTENCIA</string>
+
+    <array name="itemsHrs">
+        <item>07:00-08:00 a.m.</item>
+        <item>08:00-09:00 a.m.</item>
+        <item>09:00-10:00 a.m.</item>
+        <item>10:00-11:00 a.m.</item>
+        <item>11:00-12:00 p.m.</item>
+        <item>12:00-01:00 p.m.</item>
+        <item>01:00-02:00 p.m.</item>
+        <item>02:00-03:00 p.m.</item>
+        <item>03:00-04:00 p.m.</item>
+        <item>04:00-05:00 p.m.</item>
+        <item>05:00-06:00 p.m.</item>
+        <item>06:00-07:00 p.m.</item>
+        <item>07:00-08:00 p.m.</item>
+        <item>08:00-09:00 p.m.</item>
+    </array>
+
+    <array name="itemsHora">
+        <item>"07"</item>
+        <item>"08"</item>
+        <item>"09"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+        <item>"19"</item>
+        <item>"20"</item>
+    </array>
+
+    <array name="itemsMin">
+        <item>"00"</item>
+        <item>"05"</item>
+        <item>"10"</item>
+        <item>"15"</item>
+        <item>"20"</item>
+        <item>"30"</item>
+        <item>"40"</item>
+        <item>"50"</item>
+        <item>"59"</item>
+    </array>
+
+    <string name="nothing"> </string>
+    <string name="search_devices">Buscar Dispositivos</string>
+    <string name="not_compatible">No compatible</string>
+    <string name="no_support">Este teléfono no cuenta con Bluetooth</string>
+    <string name="fun_limted">Funcionalidad limitada</string>
+    <string name="since_perm_not_granted">Como no se otorgaró acceso a la ubicación, la aplicación no podrá funcionar correctamente</string>
+    <string name="need_loc_access">Esta aplicación necesita acceso a la ubicación</string>
+    <string name="please_grant_loc_access">Por favor otorgue acceso a la ubicación para que esta aplicación pueda detectar dispositivos bluetooth</string>
+    <string name="connecting">Conectando..</string>
+    <string name="searching">Buscando..</string>
+    <string name="found">Dispositivos encontrados</string>
+    <string name="make_discoverable">Hacer visible</string>
+    <string name="not_connected">No conectado</string>
+    <string name="bluetooth_not_enabled">Bluetooth no habilitado</string>
+    <string name="bluetooth_on">Bluetooth está habilitado</string>
+    <string name="connected_to">Conectado a: </string>
+    <string name="paired_devices">Dispositivos emparejados</string>
+    <string name="write_something">Escribir algo..</string>
+    <string name="test_message">Mensaje de prueba ?</string>
+    <string name="test_stamp">15-05-2022, 4:25 a.m.</string>
+</resources>

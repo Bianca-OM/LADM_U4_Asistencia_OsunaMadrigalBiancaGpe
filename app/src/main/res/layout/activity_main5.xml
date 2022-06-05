@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTituloTomar"
+            android:text="TOMAR ASISTENCIA"
+            android:textSize="20dp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgConnectionDot"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_circle_red"/>
+
+                <TextView
+                    android:id="@+id/lblStatus"
+                    android:text="ESTADO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBuscar"
+                android:text="BUSCAR DISPOSITIVOS"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblBuscar"
+                android:text="Buscar dispositivos: Encender bluetooth y\naparecer como visible para poder buscar\ndispositivos disponibles para vinculación"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblInstrucciones"
+                android:text="Seleccione el dispositivo correspondiente a APK ALUMNO para permitir la vinculación, la vinculación solo se realizará cuando ambos dispositivos hayan intentado vincularse"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblInstrucciones2"
+                android:text="Es posible que uno de los dispositivos tenga que volver a seleccionar el otro dispositivo si la conexión no se estableció correctamente la primera vez"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblEncontrados"
+                android:text="Lista de dispositivos disponibles:"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblBuscando"
+                    android:text="Buscando"
+                    android:textColor="@color/teal_700"
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBuscando"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

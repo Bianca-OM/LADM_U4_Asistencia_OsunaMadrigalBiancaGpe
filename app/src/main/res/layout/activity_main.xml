@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTituloHome"
+            android:text="APP PARA TOMAR ASISTENCIA"
+            android:textSize="20dp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/imgList"
+            android:src="@drawable/ic_list"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPasar"
+            android:text="PASAR LISTA"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPasar"
+            android:text="Pasar lista: Activar bluetooth para que los\nalumnos registren su asistencia"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGestionar"
+            android:text="GESTIONAR LISTAS"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblGestionar"
+            android:text="Gestionar listas: Consultar listas de asistencia,\nbajar listas en archivos separados por comas,\neliminar registros de asistencia"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInsertar"
+            android:text="INSERTAR ASISTENCIAS"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblInsertar"
+            android:text="Insertar asistencias: Insertar registros\nmanualmente para realizar pruebas\ndurante el desarrollo del proyecto"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTest"
+            android:text="PROBAR CHAT BLUETOOTH"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTest"
+            android:text="Probar chat bluetooth: Comprobar que existe\nconexión, envío y recivido de mensajes bluetooth"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
